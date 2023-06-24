@@ -1,0 +1,5 @@
+
+#ifndef CPP_MASTERY_PRACTICE_DISTANCE_H
+#define CPP_MASTERY_PRACTICE_DISTANCE_H
+int distance(int v0, int a, int vf);
+#endif //CPP_MASTERY_PRACTICE_DISTANCE_H

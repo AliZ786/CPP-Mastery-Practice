@@ -2,10 +2,11 @@
 #include "AreaTriangle.h"
 #include "SumNN.h"
 #include "QuadRoots.h"
+#include "Distance.h"
 
 int main() {
     int choice;
-    std::cout <<"Please enter the program you want to run (1 for triangle area, 2 for sum of natural numbers, 3 for root function):";
+    std::cout <<"Please enter the program you want to run (1 for triangle area, 2 for sum of natural numbers, 3 for root function, 4 for distance function):";
     std:: cin>>choice;
 
     if (choice ==1) {
@@ -32,6 +33,18 @@ int main() {
         std::cout << "Enter coefficient c:";
         std::cin >> c;
         root(a,b,c);
+    }
+
+    else if(choice ==4){
+        std::cout << "\n----- Calling the distance() function -----" << std::endl;
+        int v0,vf,a;
+        std::cout << "Enter intial velocity:";
+        std::cin >> v0;
+        std::cout << "Enter final velocity:";
+        std::cin >> vf;
+        std::cout << "Enter accleration:";
+        std::cin >> a;
+        distance(v0,a,vf);
     }
 
     return 0;
