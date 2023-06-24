@@ -1,19 +1,14 @@
-// Your First C++ Program
-
 #include <iostream>
-using namespace std;
+#include "AreaTriangle.h"
 
-int main() {
-    int base, height, area;
-    cout<<"Enter the base of the triangle: ";
-    cin>>base;
-    cout<<"Enter the height of the triangle: ";
-    cin>>height;
+void area() {
+    int base, height;
+    std::cout << "Enter the base of the triangle: ";
+    std::cin >> base;
+    std::cout << "Enter the height of the triangle: ";
+    std::cin >> height;
 
-    area = (float)((base*height))/2;
+    float triangleArea = (base * height) / 2.0;
 
-    cout<<"\nThe Area of the triangle is: "<<area<<endl;
-
-
-
+    std::cout << "The Area of the triangle is: " << triangleArea << std::endl;
 }
